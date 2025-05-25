@@ -1,0 +1,192 @@
+body {
+  background-image: url(https://64.media.tumblr.com/2dbf142a4a69b350fa220a103f18f88a/tumblr_nmjpfvJD4i1qze3hdo1_r1_500.gif);
+  background-repeat: no-repeat;
+  background-size: 2200px;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(163, 206, 98);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.site-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #9e814a;
+  letter-spacing: 1px;
+}
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 70px;
+}
+
+.menu-toggle span {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  margin-right: 50px;
+  background-color: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.nav-menu.show {
+  display: flex;
+}
+
+.nav-menu a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #444;
+}
+.nav-menu a:hover {
+  background-color: #444;
+}
+.split-text {
+  font-size: 50px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.split-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100px);
+  animation: split-animation 3s ease-out infinite;
+}
+
+@keyframes split-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.split-text span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.split-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.split-text span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.split-text span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.split-text span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.split-text span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.split-text span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.search-container {
+  text-align: center;
+  margin: 40px auto;
+}
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+.search-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.result-item {
+  background-color: #fff0f5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+.result-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.gradientText {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #FF6347, #1E90FF, #32CD32, #FFD700, #8A2BE2, #FF4500);
+  background-size: 400% 400%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: gradientAnimation 5s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.credits {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.span1 {
+  color: greenyellow;
+}
+
+.span2 {
+  color: yellow;
+}
