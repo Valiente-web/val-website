@@ -97,7 +97,7 @@ const flowers = [
       floriography: "Purity, Innocence, & New Beginnings",
       bloom_season: "Early Summer",
       life_cycle: "Perennial",
-      image_url: "https://terrepromise.ca/web/image/product.template/634/image_1024?unique=b813189"
+      image_url: "https://images.ctfassets.net/1d9ajmvjpuhw/LIYEZtbgEZCUtV2ni67rg/3af547e3c10b50c4a77f75e016e5f7d3/1694177827737-3._Daisy_flower.jpg?w=1280&h=1280&fm=webp&q=75"
   },
   {
       name: "Foxglove",
